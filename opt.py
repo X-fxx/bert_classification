@@ -16,11 +16,11 @@ def opt():
 
     # bert
     parser.add_argument("--max_len", type=int, default=128, help="max length of input sequence")
-    parser.add_argument("--vocab_file", type=str, default="/home/log_generation/4_BERT/myBert/processed_data/generateand_without_p4_p5/alarm_train_vocab_without.txt", help="vocab file")
+    parser.add_argument("--vocab_file", type=str, default="", help="vocab file")
 
     # data
-    parser.add_argument("--train_file", type=str, default="/home/log_generation/4_BERT/myBert/processed_data/generateand_without_p4_p5/alarm_train_without.json", help="train data file")
-    parser.add_argument("--test_file", type=str, default="/home/log_generation/4_BERT/myBert/processed_data/generateand_without_p4_p5/alarm_test_without.json", help="test data file")
+    parser.add_argument("--train_file", type=str, default="", help="train data file")
+    parser.add_argument("--test_file", type=str, default="", help="test data file")
 
     # train
     parser.add_argument("--batch_size", type=int, default=128, help="batch size")
@@ -35,7 +35,7 @@ def opt():
     parser.add_argument("--output_dir", type=str, default=f"./result/{now}_output", help="output directory")
 
     # test
-    parser.add_argument("--test_model_path", type=str, default="/home/log_generation/4_BERT/myBert/result/06-22-13-19-53_output_1e-05_128_150/model_weight/model_67.pth", help="test model path")
+    parser.add_argument("--test_model_path", type=str, default="", help="test model path, .pth")
 
     args = parser.parse_args()
 
