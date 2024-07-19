@@ -1,1 +1,5 @@
-# bert_classification
+# Bert_Classification
+## 简单的分类任务，很多的学问
+原本使用分类任务完成聚类结果的分析
+现在使用分类任务做一些简单可视化的测试，包括wandb、AUC等计算
+
